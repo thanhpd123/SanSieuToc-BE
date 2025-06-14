@@ -4,15 +4,15 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // Routers
-const typeRouter = require('./Router/TypeRouter');
-const fieldsRouter = require('./Router/FieldsRoutes');
-const authRouter = require('./Router/authRoutes');
-const bookingRouter = require('./Router/bookingRoutes');
-const coachesRouter = require('./Router/coachesRouter');
-const coachBooking = require('./Router/coachBookingRoutes');
-const fieldUnit = require('./Router/fieldUnitRouters')
-const uploadRouter = require('./Router/uploadRoutes');
-const reportRouter = require('./Router/reportsRoutes');
+const typeRouter = require('./router/typeRouter');
+const fieldsRouter = require('./router/fieldsRoutes');
+const authRouter = require('./router/authRoutes');
+const bookingRouter = require('./router/bookingRoutes');
+const coachesRouter = require('./router/coachesRouter');
+const coachBooking = require('./router/coachBookingRoutes');
+const fieldUnit = require('./router/fieldUnitRouters')
+const uploadRouter = require('./router/uploadRoutes');
+const reportRouter = require('./router/reportsRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
