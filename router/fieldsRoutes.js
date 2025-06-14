@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const FieldsController = require("../controller/fieldsController_temp");
+const FieldsController = require("../controller/fieldsController");
 const allowRoles = require("../middleware/allowRoles");
 const authMiddleware = require("../middleware/authMiddleware");
 
