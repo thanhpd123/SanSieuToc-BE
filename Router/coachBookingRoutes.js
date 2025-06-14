@@ -6,7 +6,7 @@ const {
   getUserCoachBookings,
   getCoachBookings,
   updateBookingStatus
-} = require('../Controller/coachBookingController');
+} = require('../controller/coachBookingController');
 
 // POST   /coach-bookings           → Tạo booking mới (user phải login)
 router.post('/', authMiddleware, createCoachBooking);

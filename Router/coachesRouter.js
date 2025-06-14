@@ -6,7 +6,7 @@ const {
   getCoachById,
   updateCoach,
   deleteCoach
-} = require('../Controller/coachesController');
+} = require('../controller/coachesController');
 // Nếu bạn có middleware auth để giới hạn create/update/delete, import tại đây
 // const authMiddleware = require('../middleware/auth');
 

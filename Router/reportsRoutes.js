@@ -6,7 +6,7 @@ const {
   getRevenueBySlot,
   getMonthlyRevenueComparison,
   getYearlyRevenueComparison,
-} = require('../Controller/reportController');
+} = require('../controller/reportController');
 const authMiddleware = require("../middleware/authMiddleware");
 const allowRoles = require("../middleware/allowRoles");
 
@@ -17,9 +17,9 @@ router.get('/field', authMiddleware, allowRoles("manager", "admin"), getRevenueB
 
 router.get('/slot', authMiddleware, allowRoles("manager", "admin"), getRevenueBySlot);
 
-router.get('/month',authMiddleware, allowRoles("manager", "admin"), getMonthlyRevenueComparison);
+router.get('/month', authMiddleware, allowRoles("manager", "admin"), getMonthlyRevenueComparison);
 
-router.get('/year',authMiddleware, allowRoles("manager", "admin"), getYearlyRevenueComparison);
+router.get('/year', authMiddleware, allowRoles("manager", "admin"), getYearlyRevenueComparison);
 
 
 module.exports = router;

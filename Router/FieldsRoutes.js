@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const FieldsController = require("../Controller/FieldsController");
-const  allowRoles  = require("../middleware/allowRoles");
+const FieldsController = require("../controller/FieldsController");
+const allowRoles = require("../middleware/allowRoles");
 const authMiddleware = require("../middleware/authMiddleware");
 
 router.get("/", FieldsController.getAllFields);
