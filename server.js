@@ -32,7 +32,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/images', express.static('public/images'));
 
 // ===== MongoDB Connection =====
-const DB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Sansieutoc' || 'mongodb+srv://thanhpd2303:ViuqJ4ZOiPH6sbeT@sansieutoc.wnrijxt.mongodb.net/?retryWrites=true&w=majority&appName=SanSieuToc';
+const DB_URI = process.env.MONGODB_URI || 'mongodb+srv://thanhpd2303:ViuqJ4ZOiPH6sbeT@sansieutoc.wnrijxt.mongodb.net/?retryWrites=true&w=majority&appName=SanSieuToc';
 
 mongoose.connect(DB_URI)
   .then(() => console.log('✅ MongoDB connected successfully!'))
